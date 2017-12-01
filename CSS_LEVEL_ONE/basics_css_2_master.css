@@ -1,0 +1,29 @@
+/*Tak jak było wspominane w poprzednim ćwiczeniu "basics_css_1_master" za pomocą pliku CSS możemy narzucić ogólny wygląd tła na naszej stronie, poprzez zmianę własności dla sekci BODY.
+Następnie możemy dla wszystkich akapitów P na naszej ustronie ustalić kolor tekstu na żółty, odnosząc się do koloru poprzez własność dla akapitu.
+Na naszej stronie umieściliśmy również sekcję DIV dla której zmieniliśmy tło oraz dodaliśmy obramowanie.
+Ponieważ DIV mają swoje tło to one przykryją tło ustawione w sekcji BODY. Podobny zabieg dokonaliśmy ze SPANEM.
+Ponieważ SPAN przykrywna nie dość, że tło ustawione w sekcji BODY to również tło ustawione dla DIV.
+
+Poprzez ten przykład można wywnioskować jak zachowuje się formatowanie przy pomocy CSS znaczników które obejmują wszystkie elementy (BODY), aż po węższe grono elementów (DIV, SPAN), aż po akapity itd.
+Należy pamiętac o pewnej hierarchni i zasięgu znaczników.*/
+
+body{
+  background: url(https://media-cdn.tripadvisor.com/media/photo-s/0e/85/48/e6/seven-mile-beach-grand.jpg);
+  background-repeat: repeat;
+}
+
+div{
+  background-color: blue;
+  border-width: 2px;
+  border-style: double;
+  border-color: orange;
+}
+
+p{
+  color: yellow;
+}
+
+span{
+  background-color: red;
+  color: black
+}

@@ -1,6 +1,6 @@
 /* Pomiędzy takimi znakami piszemy komentarze w pliku CSS */
 
-/*Każdy znacznik którego używamy w sekcji BODY służący do wyświetlania informacji na stronie internetwoej mogą zostać stylizowane za pomocą pliku CSS
+/*Każdy znacznik którego używamy w sekcji BODY służący do wyświetlania informacji na stronie internetwoej może zostać stylizowany za pomocą pliku CSS
 
 Pliki CSS zawierają następującą strukturę:
 
@@ -11,14 +11,14 @@ znacznik{
   itd.
 }
 
-Najpierw wypisujemy ZNACZNIK który chcemy stylizować np akapit P, a nastepnie między nawiasami klamrowymi {} wypisujemy własności oraz wartości jaką jej przypisujemy,
+Najpierw wypisujemy ZNACZNIK który chcemy stylizować np akapit P, a nastepnie między nawiasami klamrowymi {} wypisujemy własności oraz wartości jaką jej przypisujemy.
 W przypadku akapitu P stylizujemy tekst. Na przykład możemy zmienić kolor tekstu w znaczniku P. Robimy to poprzez zapis "color: red;"
 Każdy znacznik ma swój zbiór własności które możemy zmienić na inną wartość.
 
 Możemy zmieniać nie tylko teksty w akapitach P, listach OL, UL tabelach TABLE, formularzach FORM, ale również obramowanie tabel TABLE, tła w linkach A itd.
 
 Bardzo istotne jest w plikach CSS to, że możemy ustalić coś dla całej sekcji BODY, wówczas każdy tekst bądź coś innego będzie takie same dla każdego znacznika występującego w BODY.
-Możemy też odnośić się tylko do niektórych znaczników aby były stylizowane. Możemy mieszać. Część stylizacji będzie pochodziła ze zmianionych własności dla sekcji BODY a cześć dla konkretnego znacznika, np akapitu P.*/
+Możemy też odnośić się tylko do niektórych znaczników aby były stylizowane. Możemy mieszać. Część stylizacji będzie pochodziła ze zmienionych własności dla sekcji BODY a cześć dla konkretnego znacznika, np akapitu P.*/
 
 h1{
   color: red;
