@@ -1,0 +1,56 @@
+/*W poprzednich zadaniach odwoływaliśmy i stylizowalismy całe znaczniki zawierające treści na naszej stronie internetowej.
+W przypadku gdy mamy kilka akapitów na naszej stroni i chcielibyśmy stylizować jedne akapity inaczej a jeszcze inne inaczej,
+np. mamy 5 akapitów i chcielibyśmy 2 z nich stylizowac inaczej, kolejne 2 jeszcze inaczej i 1 pozostały jeszcze inaczej.
+Wówczas w kodzie HTML nadajemy znacznikom klasy CLASS oraz identyfikatory ID.
+Przyczym należy pamiętać, że jednej klasie CLASS możemy przypisać do kilka znaczników, jeżeli chcemy aby te znaczniki stylizować według tego samego wzoru.
+Natomiast identyfikatory ID nie mogą się powtarzać i w kodzie HTML tylko jeden znacznik może zawierać daną nazwę identyfikatora ID.
+
+Należy pamiętać, że możemy stosować kombinacje identyfikatorów, klas i bezpośrednio znaczników, tak aby dostać się do konkretnego elementu i tylko jego zmienić bez zmieniania innych należących do tej samej klasy CLASS bądż grupy.
+
+--------------------------------------------------------
+
+W pliku HTML nadaliśmy klasy i indetyfikatory poszczególnym znacznikom.
+
+Aby stylizować znaczniki z nadanymi klasami odwołujemy się donich poprzez:
+.nazwaKlasy
+
+Aby stylizować znacznik z nadanym identyfikatorem odwołujemy się do niego poprzez:
+#nazwaIdentyfikatora
+
+Stylizując możemy odwoływać się jedynie poprzez nazwę klasy bądź identyfikatora jak również poprzez kombinacje znaczników, klas, identyfikatorów.
+Co więcej możemy również poprzez odpowiednie kombinacje selektorami odowływac się do konkretnych znaczników, atrybutów itp.
+
+Poniżej znajduje się spis wszystkich możliwych kombinacj, WARTO PAMIĘTAĆ GDZIE JE ZNALEŹĆ:
+https://www.w3schools.com/cssref/css_selectors.asp
+
+Poniżej opisze te które zostały użyte.*/
+
+.firstDiv{ /*stylizowanie elementów zawierających klasę "firstDiv"*/
+  color: blue;
+}
+
+.secondDiv{ /*stylizowanie elementów zawierających klasę "secondDiv"*/
+  color: red;
+}
+
+#singledout{ /*stylizowanie elementu zawierającego identyfikator "singledout"*/
+  color: green;
+  text-decoration: line-through;
+}
+
+h3 + ul{ /*stylizowanie nieuporządkowanej listy UL, tej która znajduje się za nagłówkiem H3*/
+  border: 4px dotted purple;
+}
+
+li a{ /*stylizowanie wszystkich elementów - linków, będących elementami listy. Najpierw podajemy znacznik w którym będziemy szukali następnie podawanego znacznika który stylizujemy. Np "div p" oznaczałoby, że stylizujemy wszystkie akapity P znajdujące się w DIV*/
+  color: red;
+}
+
+li a[href="www.onet.pl"]{ /*poniższe oznacza bardzo podobnie to co powyższe, jednak z tym zastrzeżeniem będziemy stylizować linki zawierające konkretny adres http(s) - WOW tak bardzo możemy się zagęszczać aby odnosić się do konkretnych elementów*/
+  color: yellow;
+  border: 5px solid grey;
+}
+
+/* *{ gwiazdka oznacza, że stylizujemy wszstkie elementy na stronie - BARDZO RZADKO UŻYWANY
+   color: black;
+ } */
