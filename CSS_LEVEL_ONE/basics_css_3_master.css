@@ -38,11 +38,11 @@ Poniżej opisze te które zostały użyte.*/
   text-decoration: line-through;
 }
 
-h3 + ul{ /*stylizowanie nieuporządkowanej listy UL, tej która znajduje się za nagłówkiem H3*/
+h3 + ul{ /*stylizowanie nieuporządkowanej listy UL, tej która znajduje się bezpośrednio za nagłówkiem H3*/
   border: 4px dotted purple;
 }
 
-li a{ /*stylizowanie wszystkich elementów - linków, będących elementami listy. Najpierw podajemy znacznik w którym będziemy szukali następnie podawanego znacznika który stylizujemy. Np "div p" oznaczałoby, że stylizujemy wszystkie akapity P znajdujące się w DIV*/
+li a{ /*stylizowanie wszystkich linków, będących elementami listy. Najpierw podajemy znacznik w którym będziemy szukali następnie podawanego znacznika który stylizujemy. Np "div p" oznaczałoby, że stylizujemy wszystkie akapity P znajdujące się w DIV*/
   color: red;
 }
 
