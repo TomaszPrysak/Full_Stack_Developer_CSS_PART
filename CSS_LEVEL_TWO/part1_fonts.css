@@ -1,0 +1,82 @@
+/*Zmiana czcionki na stronie interentowej
+
+Czcionka wyświetlana przez przeglądarki internetowe jest zależna od systemu operacyjnego i od czcionek zainstalowanych w systemie.
+Na jednych komputerach nasza strona internetowe może być wyświetlana z czcionką Times News Roman a na innych z jeszcze inną czcionką.
+Dlatego ważne jest aby podczas projektowania strony internetowej ustalić czcionkę jaką chcemy wyświetlić.
+
+Ustawienie czcionki odbywa poprzez własność FONT-FAMILY oraz ustawienie własności jako:
+- podanie nazwy konkretnej czcionki która chcemy użyć, nazwa ta musi być obsługiwana przez system (jeżeli czcionka ma podwójny człon nazwy to umieszczamy w cudzysowiu), np.: Arial, Helvetica
+- określenie kroju czcionki: cursive, fantasy, inherit, monospace, sans-serif, serif. Jeżeli określimy krój a nie okreslimy nazwy czcionki to przeglądarka użyje domyślej czcionki danego kroju.
+
+Możemy róniweż po przecinku umieścić kilka nazw czcionki bądź kroju czcionki i w ten sposób zabezpieczamy się na wypadek gdyby użytkownik przeglądający nasza stronę internetową nie miał którejś czcionki w swoim systemie.
+Wówczas, jeżeli nie zostanie znaleziona w systemie pierwsza czionka, wyświetlana będzie czcionka którą ustawimy jako kolejną po przecinku.
+Pod poniższym linkiem możemy sprawdzać dostępność standardowych czcionek pod konkretnymi systemami operacyjnymi:
+https://www.cssfontstack.com/
+
+Przykład definiowania standardowej czcionki poniżej:
+*/
+
+h1{
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+/*Powyższy sposób dotyczył definiowania czcionki która jest standardową czcionką obecną w systemie.
+Jednak, jeżeli będziemy chcieli zastosować czcionkę alternatywną mamy dwie możliowści na to:
+ 1. Podpiecię czcionki znajdującej się na serwerze, np. fonts.google.pl.
+    W tym celu w pliku HTML naszej strony internetowej w sekcji HEAD wklejamy odpowiedni znacznik LINK. Jest on podawany przez serwer udostępniający czcionkę.
+    A następnie w pliku CSS umieścić odpowiednią własność FONT-FAMILY. Również jest ona podawana przez serwer udostępniający czcionkę.*/
+
+p{
+  font-family: 'Poiret One', cursive;
+}
+
+/*2. Podpięcie czcionki ściągniętej w postaci pliku, np. True Type (*.ttf).
+     W tym przypadku działamy jedynie w pliku CSS.
+     Najpierw dokonujemy osadzenia czcionki za pomocą @FONT-FACE gdzie definiujemy nazwę naszej czcionki oraz jej adres wzgledny(to znaczy wzlgędem naszego pliku CSS).*/
+
+@font-face {
+  font-family: "myfont";
+  src: url("BigelowRules-Regular.ttf");
+}
+
+/*  A następnie wykorzystując nazwę jaką nadaliśmy naszej czcionce (podczas osadzania czcionki @FONT-FACE) stylizujemy tekst.
+    Robimy to wpisując w FONT-FAMILY naszą nazwę czcionki. */
+
+#one{
+  font-family: myfont;
+}
+
+/*Ustawienie wielkości czcionki odbywa się za pomocą własności FONT-SIZE.
+Następnie okreslamy wielkość naszej czcionki dla konkretnego znacznika (P) bądź całej naszej strony (BODY).
+Do określenia wielkości czcionki używamy dwóch wielkości:
+- px (pixels) po prostu ustawiamy wielkość czcionki poprzez ilość pikseli tworzących czcionkę.
+- em (equal) jest to wielkość czcionki względem zdefiniowanej wielkości wcześniej dla tego samego znacnzika lub znacznika będącego rodzicem.
+     Na przykład ustaliliśmy, że w sekcji BODY czcionka będzie miała wielkość 20px. Wówczas ustawiając dla akapitu pod identyfikatorem ID czcionkę 2.0em, oznacza to, że będzie ona dwa razy większa od czcionki 20px. I tak dalej.
+     Jeżeli dla znacznika akapitu P ustaliliśmy czcionkę 5px, to jeżeli dla innego akapitu będziemy chcieli użyć wielkości czcionki 1.5em to ten akapit będzie miał wielkość czcionki równą 7,5px.
+     UWAGA! Jeżeli w żadnym miejscu pliku CSS nie przypiszemy wielkośći czcionki, a dla któregoś znacznika będziemy chcieli przypisać czcionkę np 2.0em oznaczać to będzie, że będzie to dwa razy większa od domyślnej wielkości.
+            Domyślna wielkość czcionki przy projektowaniu stron internetowych to 16px.
+            Pomoc przy okreslaniu wielkości czcionki względem domyślnej:
+            1em = 16px
+            2em = 32px*/
+
+body{
+  font-size: 20px;
+}
+
+#two{
+  font-size: 2.0em;
+}
+
+/*Pozostałe własności zaczynające się na FONT-... związane są z wyglądem czcionki naszej strony internetowej*/
+
+p{
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*Natomiast własności zaczynające się na TEXT-... dotyczą np umieszczenia naszego tekstu na stronie, wyrównanie do lewej, wyśrodkowanie, do prawej.
+I tak dalej.*/
+
+h1{
+  text-align: center;
+}

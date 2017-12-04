@@ -1,0 +1,37 @@
+/*Zasada BOX MODEL
+
+Według tej zasady elementy(jako znaczniki HTML)/treści (tekst, link, obrazek, tabela itd.) na naszej stronie internetowej zawierają trzy właściwości pozwalające je odpowiednio umiejscowić.
+Własności pozwalające na odpowiednie umiejscowienie to:
+
+1. PADDING - odległość między treści a jej obramowaniem. Określając wielkosć tej odległości tworzymy niewidoczną przestrzeń między treścią (jej zarysem ściśle do niej przylegającym) a obramowaniem.
+2. BORDER - obramowanie treści. Ustalając grubość obramowania tworzymy ramkę wokół treści. Jeżeli dodatkowo okreslimy PADDING wówczas ramka będzie obejmowała treść oraz przestrzeń pustą określającą przez PADDING. Jeżeli nie okreslimy PADDING to ramka będzie ściśle przylegała do treści
+3. MARGIN - Jest to odległość od obramowania naszej treści do kolejnego elementu zawierającego treść. Na przykład chcemy odsunąć od siebie dwa akapity o odległość 20px to dla jednego z tych akapitów określamy MARGIN na 20px, albo dla obydwu po 10px.
+
+UWAGA! Powyższe dotyczę nie tylko elementów umieszczających bezpośrednio treści na naszej stronie internetwej (jak na przykład akapity P, link A, obrazki IMG itd), ale również elementy w które dopierwo wrzucamy elementy zawierające treść (takie jak DIV, SPAN itp).
+
+Każdą z powyższych właściowości możemy okreslić osobno dla każdego kierunku: top, right, bottom, lef. Wówczas wybieramy odpowiednią własnosć z kierunkiem definiowania, np.: marign-left, margin-bottom, padding-right, padding-top, border-left itd.
+
+Możemy również posłużyć się poleceniem ogólnym MARIGN/PADDING/BORDER i wówczas podać 4 wartości określające po kolei: top right bottom left.
+
+UWAGA! Jeżeli nie zdefiniujemy wartości WIDTH dla naszej treści to wówczas przestrzeń na nią będzie się rozciągać na całą długość naszej strony.
+       Zmieniamy to używając WIDTH i przypisujemy wartość w % albo PX. Procenty oznaczają, że treść będzie wypełniać x% szerokości strony internetowej. Niezależnie jaki rozmiar będzie mieć okno przeglądarki treść będzie się przystosowywać do jego rozmiaru i będzie wypełniać x%.
+       Piksele oznaczają, że na treść przezmaczamy szerokość określoną w pikselach. Niezależnie od szerokości okna przeglądarki treść będzie zajmować stałą szerokość i jeżeli będzie trzeba to pojawi się pasek przewijania w przeglądarce.
+       Możemy również zdefiniować maksymalną szerokość treści MAX-WIDTH wówczas jeżeli okno będzie zmaksymalizowane to bedzie odpowiednia szerokośc, a jeżeli będziemy zmniejszać szerokość to treść będzie się ścieśniać.
+
+UWAGA! Wykorzystując TEXT-ALIGN możemy rozmieścić naszą treść, od lewej, wyśrodkowame lub od prawej, w środku przestrzeni WIDTH na nią przeznaczoną a nie rozmieszczenia względem okna przeglądarki.
+
+Do wyśrodkowania przestrzeni na treść względem okna przeglądarki używamy MARGIN i ustawiamy AUTO.*/
+
+#top{
+  border: 4px solid blue; /*ustawienie obramowania*/
+  max-width: 500px; /*ustawienie maksymalnej przestrzeni na treść*/
+  text-align: center; /*umieszczenie tekstu w przestrzeni WIDTH*/
+  margin: auto; /* top right bottom left */ /*wyśrodkowanie treości względem okna przeglądarki*/
+}
+
+#bottom{
+  border: 4px solid red; /*ustawienie obramowania*/
+  width: 50%; /*ustawienie przestrzeni na treść jako 50% szerokości okna przeglądarki*/
+  padding: 20px; /*ustawienie odsunięcia od naszej treści do obramowania w każdym kierunku na 20px. UWAGA! z lewej i prawej jest więcej ponieważ dodatkowo ustawiliśmy wyśrodkowanie tekstu w tej przestrzeni 50% okna szerokości i dlatego jest więcej niż 20px*/
+  text-align: center; /*wyśrodkowanie tekstu w przestrzeni WIDTH*/
+}

@@ -1,0 +1,53 @@
+h1{
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+}
+
+.art{
+  margin: auto;
+}
+
+/*Jest wiele możliwości realizacji tego zadania.
+W pierwszym sposobie z góry zdefiniowano wysokość i szerokość komórek tabeli. Dzięki czemu zmieniając ich kolor tła od razu uzyskaliśmy efekt końcowy.
+Dodaliśmy jedynie obramowanie każdej komórki białym kolorem aby uzyskać wymagane odstępy.
+
+W drugim sposobie ustalono osobno PADDING dla każdego kierunku, aby uzyskac wysokość i szerokość komórek tabeli. Wówczas dokonując kolorowania tła uzyskaliśmy efekt końcowy.
+Dodalismy jeszcze obramowanie każdej komórki biłabym kolorem aby uzyskać wymagane odstępy.
+UWAGA! Dla tego zadania pożytkowanie się PADDING spełnia swoją rolę. Jednak gdybyśmy oprócz koloru mieli jeszcze treść w każdej komórce to sposób drugi byłby nieodpowiedni.
+
+
+1. Sposób*/
+td{
+  height: 400px;
+  width: 200px;
+  border: 6px solid white;
+}
+
+/*2. Sposób*/
+/*td{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 6px solid white;
+}*/
+
+#first{
+  background-color: #752F16;
+}
+
+#second{
+  background-color: #9E3E1E;
+}
+
+#third{
+  background-color: #DD5630;
+}
+
+#fourth{
+  background-color: #F2976A;
+}
+
+#fifth{
+  background-color: #FFCC9E;
+}
