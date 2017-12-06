@@ -18,9 +18,8 @@ UWAGA! Jeżeli nie zdefiniujemy wartości WIDTH dla naszej treści to wówczas p
        Piksele oznaczają, że na treść przezmaczamy szerokość określoną w pikselach. Niezależnie od szerokości okna przeglądarki treść będzie zajmować stałą szerokość i jeżeli będzie trzeba to pojawi się pasek przewijania w przeglądarce.
        Możemy również zdefiniować maksymalną szerokość treści MAX-WIDTH wówczas jeżeli okno będzie zmaksymalizowane to bedzie odpowiednia szerokośc, a jeżeli będziemy zmniejszać szerokość to treść będzie się ścieśniać.
 
-UWAGA! Wykorzystując TEXT-ALIGN możemy rozmieścić naszą treść, od lewej, wyśrodkowame lub od prawej, w środku przestrzeni WIDTH na nią przeznaczoną a nie rozmieszczenia względem okna przeglądarki.
-
-Do wyśrodkowania przestrzeni na treść względem okna przeglądarki używamy MARGIN i ustawiamy AUTO.*/
+UWAGA! TEXT-ALIGN służy do umiejscowania tekstu (do lewe, wyśrodkowane, do prawej) w przestrzeni w której znajduje się tekst. Jeżeli tekst jest zagnieżdżony to nie koniecznie będzie to oznaczać rozmieszczenie względem okna przeglądarki.
+       Aby wyśrodkować tekst względem okana przeglądarki musimy znać zagnieżdżenie tekstu i jeżeli on NIE będzie znajdowac się bezpośrednio w BODY to musimy użyć MARIGN:AUTO na elemencie w którym znajduje się tekst. Należy wźąć pod uwagę to, że nie koniecznie musi to być tekst. Wszystko co znajduje się w tej przestrzenie dla której używmay MARGIN:AUTO będzie wyśrodkowane.*/
 
 #top{
   border: 4px solid blue; /*ustawienie obramowania*/
