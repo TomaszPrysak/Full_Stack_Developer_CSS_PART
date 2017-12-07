@@ -4,7 +4,7 @@ Hierarchia stylizowania jest następująca
 - klasa,
 - identyfikator.
 Jeżeli w pliku CSS odnosimy się do znacznika wówczas jest stylizowany cały znacznik. Jeżeli on występuje w wielu miejscach to wszędzie będzie stylizowany.
-Nastepnie jeżeli jakiś znaczni z pośród tego który już stylizowaliśmy ogólnie posada przypisaną klasę i będziemy chcieli ją inaczej stylizować to stosując odwołanie do klasy wystylizujemy znacnziki zawierające tą klasę inaczej niż użyta stylizacja ogólna.
+Nastepnie jeżeli jakiś znaczni z pośród tego który już stylizowaliśmy ogólnie posiada przypisaną klasę i będziemy chcieli ją inaczej stylizować to stosując odwołanie do klasy wystylizujemy znacnziki zawierające tą klasę inaczej niż użyta stylizacja ogólna.
 A na samym górze w hrierarchi są identyfikatory. Nie ma znaczenia, że dany znacznik poddaliśmy stylizacji za pomocą ogólnego znacznika bądź klasy, jeżeli dodatkowo miał przypisany identyfikator to stylizacja będzie według identyfikatora.*/
 
 li{
